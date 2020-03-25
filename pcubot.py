@@ -20,7 +20,7 @@ m = today.minute
 
 req = requests.get('http://www.pcu.ac.kr/www/04_campus/campus_0401.html')
 html = req.text
-soup = bs4.BeautifulSoup(html,'html.parser')
+soup = bs4.BeautifulSoup(html,'html.parser',from_encoding='utf-8')
 student = soup.find("h4")
 
 
