@@ -7,6 +7,7 @@
 
 import asyncio
 import discord
+import os
 
 client = discord.Client()
 token = 'NjkyMjIwMTc5OTAzNjc2NDE3.XnrXEg.aRMV8x4h72ji_Z0J4gCs7dYlYiI'
