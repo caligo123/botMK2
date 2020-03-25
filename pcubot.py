@@ -7,9 +7,10 @@
 
 import asyncio
 import discord
+import os
+
 
 client = discord.Client()
-token = 'NjkyMjIwMTc5OTAzNjc2NDE3.XnrXEg.aRMV8x4h72ji_Z0J4gCs7dYlYiI'
 
 
 @client.event
@@ -38,5 +39,5 @@ async def on_message(message):
         #메시지를 보낸사람을 호출하며 말한 메시지 내용을 그대로 출력해줍니다.
         await client.send_message(channel, "<@"+id+">님이 \""+message.content+"\"라고 말하였습니다.")
 
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
