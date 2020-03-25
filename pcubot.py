@@ -16,8 +16,6 @@ import bs4
 import requests
 from discord.ext import commands
 
-import sys
-sys.setdefaultencoding('utf-8')
 
 today = datetime.datetime.today()
 h = today.hour
