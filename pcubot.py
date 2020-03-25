@@ -45,6 +45,9 @@ async def on_message(message):
         await message.channel.send('커맨드') #봇은 해당 채널에 '커맨드' 라고 말합니다.
     elif message.content.startswith('학식'):
         await message.channel.send('학식')
+    elif message.content.startswith('테스트'):
+        await message.channel.send(student)
+        
         
     else: #위의 if에 해당되지 않는 경우
         #메시지를 보낸사람을 호출하며 말한 메시지 내용을 그대로 출력해줍니다.
