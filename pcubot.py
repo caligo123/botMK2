@@ -12,6 +12,7 @@ import os
 import datetime
 import bs4
 import requests
+from discord.ext import commands
 
 today = datetime.datetime.today()
 h = today.hour
