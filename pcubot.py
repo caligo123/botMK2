@@ -2,7 +2,7 @@
 #reveal token  :   NjkyMjIwMTc5OTAzNjc2NDE3.XnrXEg.aRMV8x4h72ji_Z0J4gCs7dYlYiI
 #pip install: discord, asyncio, websockets, aiohttp
 #requests, beautifulsoup4
-
+#-*-coding:UTF-8-*-
 
 
 import asyncio
