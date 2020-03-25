@@ -19,7 +19,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('================')
-    await message.channel.send('봇 활성화 완료. 안녕하세요')
+   
 
 
 
