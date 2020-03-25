@@ -18,6 +18,14 @@ today = datetime.datetime.today()
 h = today.hour
 m = today.minute
 
+req = requests.get('http://www.pcu.ac.kr/www/04_campus/campus_0401.html')
+html = req.text
+soup = bs4.BeautifulSoup(html,'html.parser')
+student = soup.find("h4")
+
+
+
+
 client = discord.Client()
 
 
@@ -46,6 +54,7 @@ async def on_message(message):
     elif message.content.startswith('학식'):
         await message.channel.send('학식')
     elif message.content.startswith('테스트'):
+        await message.channel.send('testing')
         await message.channel.send(student)
         
         
