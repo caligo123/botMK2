@@ -17,7 +17,6 @@ import requests
 from discord.ext import commands
 
 import sys
-reload(sys)
 sys.setdefaultencoding('utf-8')
 
 today = datetime.datetime.today()
