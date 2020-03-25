@@ -9,6 +9,14 @@ import asyncio
 import discord
 import os
 
+import datetime
+import bs4
+import requests
+
+today = datetime.datetime.today()
+h = today.hour
+m = today.minute
+
 client = discord.Client()
 token = 'NjkyMjIwMTc5OTAzNjc2NDE3.XnrXEg.aRMV8x4h72ji_Z0J4gCs7dYlYiI'
 
