@@ -42,7 +42,7 @@ async def on_message(message):
 
     if message.content.startswith('!커맨드'): #만약 해당 메시지가 '!커맨드' 로 시작하는 경우에는
         await message.channel.send('커맨드') #봇은 해당 채널에 '커맨드' 라고 말합니다.
-    if message.content.startswith("학식"):
+    elif message.content.startswith("학식"):
         await message.channel.send("학식")
         
     else: #위의 if에 해당되지 않는 경우
