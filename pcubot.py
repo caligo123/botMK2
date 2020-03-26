@@ -19,9 +19,22 @@ from discord.ext import commands
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
 
 
-today = datetime.datetime.today()
-h = today.hour
-m = today.minute
+
+
+
+session = requests.session()
+lmsLogIn = 'https://course.pcu.ac.kr/login.php'
+LOGIN_INFO={
+    'username': '2061025',
+    'password': 'zjarhd123!'
+}
+login = session.post(lmsLogIn,data=LOGIN_INFO)
+print(login.status_code)
+#loginhtml = login.text
+
+
+
+
 
 req = requests.get('http://www.pcu.ac.kr/www/04_campus/campus_0401.html')
 html = req.text
